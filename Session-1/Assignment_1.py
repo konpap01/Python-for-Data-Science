@@ -119,3 +119,151 @@ for i in range(1,6):
     my_list1.append(i)
 for i in my_list1:
     print(i)
+
+#Exercise 10: While Loop
+
+''' 
+Write a program that uses a while loop to print numbers from 1 to 5.
+Ensure the loop terminates correctly
+'''
+num1 = 1
+while num1 < 6:
+    print(num1)
+    num1 = num1 +1
+
+#Exercise 11: Match Statement (Python 3.10+)
+
+'''
+ Write a program that:
+1) Asks the user to input a grade (e.g., "A", "B", "C", "D", or "F").
+2) Use a match statement to print a corresponding message for each grade:
+■ "A": "Excellent!"
+■ "B": "Good job!"
+■ "C": "Fair."
+■ "D": "Needs improvement."
+■ "F": "Failing."
+Handle invalid input by printing a default message.
+
+'''
+
+grade = input("Enter a grade (A, B, C, D, or F): ")
+
+match grade:
+    case "A":
+        print("Excellent!")
+    case "B":
+        print("Good job!")
+    case "C":
+        print("Fair.")
+    case "D":
+        print("Needs improvement.")
+    case "F":
+        print("Failing.")
+    case _:
+        print("Invalid grade entered.")
+
+#Exercise 12: Define a Function
+'''
+Write a function called greet that takes a name as an argument and prints "Hello, [name]!".
+Call the function with your own name.
+
+'''
+
+def greet(name):
+    print("Hello", name)
+
+greet("Konstantinos")
+
+#Exercise 13: Function with Return Value
+'''
+Define a function called square that takes a number as an argument and returns its square.
+Print the result of calling this function with different numbers.
+
+'''
+
+def square(y):
+    return (y*y)
+
+print(square(5))
+print(square(978))
+
+#Exercise 14: Function with Default Parameters
+
+'''
+Write a function called multiply that takes two parameters, a and b, and returns their product. 
+Set a default value of 1 for the parameter b.
+Test the function with and without providing the second argument.
+
+'''
+def multiply(a, b=1):
+    return a*b
+
+print(multiply(9,7))
+print(multiply(9))
+
+#Exercise 15: List Comprehension
+''' 
+1) Create a list of numbers from 1 to 10.
+2) Use list comprehension to create a new list that contains the squares of these numbers.
+3) Print the new list.
+
+'''
+
+my_list = list(range(1,11))
+new_list = []
+for i in my_list:
+    new_list.append(i*i)
+
+print(new_list)
+
+#Exercise 16: Nested Data Structures
+
+'''
+1) Create a dictionary where the keys are names of students and the values are lists of their grades.
+2) Write a function that takes the dictionary and prints the average grade for each student.
+
+'''
+
+students_grades = {
+    "Kostas": [90, 85, 88],
+    "Chris": [75, 80, 70],
+    "George": [95, 100, 92],
+    "Nick": [60, 65, 58]
+}
+
+def print_average_grades(grades_dict):
+    for student, grades in grades_dict.items():
+        average = sum(grades) / len(grades)
+        print(f"{student}: {average:.2f}")
+
+print_average_grades(students_grades)
+
+#Exercise 17: Simple Calculator
+
+'''
+Write a program that:
+1) Defines a function calculate which takes three parameters: two numbers and an operator (+, -, *, /).
+2) Performs the operation and returns the result.
+3) Ask the user for the two numbers and the operator, then call the function and print the result
+
+'''
+
+def calculate(num1, num2, operator):
+    match operator:
+        case "+":
+            return num1 + num2
+        case "-":
+            return num1 - num2
+        case "*":
+            return num1 * num2
+        case "/":
+            return num1 / num2
+        case _:
+            return "Invalid operator"
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operator = input("Enter an operator (+, -, *, /): ")
+
+result = calculate(num1, num2, operator)
+print(f"The result is: {result}")
