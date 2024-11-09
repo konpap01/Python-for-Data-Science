@@ -267,3 +267,6 @@ operator = input("Enter an operator (+, -, *, /): ")
 
 result = calculate(num1, num2, operator)
 print(f"The result is: {result}")
+
+
+#End of Excercises of Assignment 1. Any suggestions or recommondations are welcomed and appreciated. 
