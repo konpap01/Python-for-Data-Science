@@ -1,7 +1,10 @@
 # Python-for-Data-Science
 Repository for the course: "Python for Data Science"
 
-The course contains 10 sessions, and for each session there is one assignment. Indicative materials covered: 
+The course contains 10 sessions, and for each session there is one assignment. For each assignment, a specific folder in this repository is dedicated.
+
+
+Indicative materials covered: 
 1) Python Refresh
 2) Environments
 3) Object-Oriented Programming
