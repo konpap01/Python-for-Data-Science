@@ -1,4 +1,4 @@
-Session 2
+#Session 2
 
 """ This repository contains the excerises based on what we covered in Session 2. The excersises are as follow:
 
