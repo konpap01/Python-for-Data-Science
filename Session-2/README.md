@@ -1,6 +1,6 @@
 # Session 2
 
-# This repository contains the excerises based on what we covered in Session 2. The excersises are as follow:
+# This folder contains the excerises based on what we covered in Session 2. The excersises are as follow:
 
 # Exercise 1: FizzBuzz
 
