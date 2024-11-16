@@ -93,7 +93,7 @@ for month in range(1, 13):
 
 sorted_files = sorted(
     valid_files,
-    key=lambda f: (f[:8], f[9:14]),       # Sorting:
+    key=lambda f: (f[:8], f[9:14]),     
     reverse=True
     )
 
