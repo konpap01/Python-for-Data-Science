@@ -1,7 +1,7 @@
 # This Folder contains excercises based on topics we covered in Session 5
 
 # Exercise: 
-Reusing the same annotations we work with in the previous session (Assignment 4), answer the following items using the libraries we saw today:
+Reusing the same annotations we work with in the previous session (Assignment 4 from Session-4), answer the following items using the libraries we saw today:
 
 1. How many annotations you have per month and year. Which month has more annotation files..
    
